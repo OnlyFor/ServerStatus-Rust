@@ -47,6 +47,8 @@ tonic = {version = "0.11", features = ["tls", "tls-webpki-roots", "gzip"]}
 tower = { version = "0.4" }
 webpki-roots = "0.26"
 url = "2.5.0"
+# 需要同时修改 src/main.rs
+mimalloc = { version = "*" }
 
 [features]
 default = ["sysinfo"]
