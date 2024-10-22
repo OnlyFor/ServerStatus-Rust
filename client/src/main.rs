@@ -2,6 +2,12 @@
 #[macro_use]
 extern crate log;
 extern crate pretty_env_logger;
+
+use mimalloc::MiMalloc;
+
+#[global_allocator]
+static GLOBAL: MiMalloc = MiMalloc;
+
 use clap::Parser;
 use hyper::header;
 use once_cell::sync::Lazy;
