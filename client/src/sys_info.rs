@@ -39,7 +39,7 @@ lazy_static! {
         "fat32",
         "exfat",
         "xfs",
-        "fuse.rclone",
+        // "fuse.rclone", // 排除 rclone
     ]
     .to_vec();
     pub static ref G_CPU_PERCENT: Arc<Mutex<f64>> = Arc::new(Default::default());
